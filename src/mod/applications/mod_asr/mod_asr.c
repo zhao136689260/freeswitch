@@ -7,6 +7,7 @@ struct switch_asr_info {
 	switch_media_bug_t *bug;
 	switch_channel_t *channel;
 };
+//ASR callback
 static switch_bool_t asr_callback(switch_media_bug_t *bug, void *user_data, switch_abc_type_t type)
 {
 	struct switch_asr_info *asr_info = (struct switch_asr_info *)user_data;
